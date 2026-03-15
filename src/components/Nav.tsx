@@ -34,9 +34,9 @@ export function Nav() {
           <Image
             src="/images/home-logo.png"
             alt="Home"
-            width={120}
+            width={40}
             height={40}
-            className="h-8 w-auto sm:h-9"
+            className="h-8 w-auto invert sm:h-9"
             priority
           />
         </Link>
