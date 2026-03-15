@@ -34,8 +34,8 @@ export default function HomePage() {
             <div className="relative mb-6 h-48 w-48 overflow-hidden rounded-2xl border-2 border-accent-cyan/30 shadow-xl shadow-accent-cyan/10 sm:h-56 sm:w-56">
               {!heroImageError ? (
                 <Image
-                  src="/images/hero.jpg"
-                  alt="Varun Narendra Patil - Mechanical Engineering (topology-optimized prototype)"
+                  src="/images/hero.png"
+                  alt="Varun Narendra Patil - Mechanical Engineering"
                   fill
                   className="object-cover"
                   sizes="224px"
