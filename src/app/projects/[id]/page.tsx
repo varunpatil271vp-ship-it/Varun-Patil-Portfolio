@@ -1,0 +1,141 @@
+'use client';
+
+import { useParams, notFound } from 'next/navigation';
+import Link from 'next/link';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
+import { ArrowLeft } from 'lucide-react';
+import { PageTransition } from '@/components/PageTransition';
+import { getProject } from '@/data/projects';
+import { projectDetails } from '@/data/projectDetails';
+
+export default function ProjectDetailPage() {
+  const params = useParams();
+  const id = params?.id as string;
+  const project = getProject(id);
+  const detail = project ? projectDetails[id] : null;
+
+  if (!project) notFound();
+
+  return (
+    <PageTransition>
+      <div className="mx-auto max-w-4xl px-4 py-24 sm:px-6 lg:px-8">
+        <Link
+          href="/projects"
+          className="inline-flex items-center gap-2 text-sm text-slate-400 transition hover:text-accent-cyan"
+        >
+          <ArrowLeft className="h-4 w-4" />
+          Back to Projects
+        </Link>
+
+        <motion.div
+          className="relative mt-6 h-64 w-full overflow-hidden rounded-xl bg-slate-800 sm:h-80"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.1 }}
+        >
+          <Image
+            src={project.image}
+            alt={project.title}
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 896px"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent" />
+          <div className="absolute bottom-4 left-4">
+            <span className="text-xs font-medium text-accent-cyan">{project.category}</span>
+            <h1 className="mt-1 text-2xl font-bold text-white sm:text-3xl">{project.title}</h1>
+            <p className="text-sm text-slate-400">{project.period}</p>
+          </div>
+        </motion.div>
+
+        <div className="mt-10 space-y-8">
+          <section>
+            <h2 className="text-lg font-semibold text-white">Overview</h2>
+            <p className="mt-2 text-slate-400">{project.shortSummary}</p>
+          </section>
+
+          {detail && (
+            <>
+              {detail.problem && (
+                <section>
+                  <h2 className="text-lg font-semibold text-white">Problem</h2>
+                  <p className="mt-2 text-slate-400">{detail.problem}</p>
+                </section>
+              )}
+              {detail.objective && (
+                <section>
+                  <h2 className="text-lg font-semibold text-white">Objective</h2>
+                  <p className="mt-2 text-slate-400">{detail.objective}</p>
+                </section>
+              )}
+              {detail.role && (
+                <section>
+                  <h2 className="text-lg font-semibold text-white">My Role</h2>
+                  <p className="mt-2 text-slate-400">{detail.role}</p>
+                </section>
+              )}
+            </>
+          )}
+
+          <section>
+            <h2 className="text-lg font-semibold text-white">Tools / Methods</h2>
+            <div className="mt-2 flex flex-wrap gap-2">
+              {project.tools.map((t) => (
+                <span
+                  key={t}
+                  className="rounded-md bg-white/5 px-3 py-1 text-sm text-slate-300"
+                >
+                  {t}
+                </span>
+              ))}
+            </div>
+          </section>
+
+          {detail?.process && (
+            <section>
+              <h2 className="text-lg font-semibold text-white">Design / Research Process</h2>
+              <p className="mt-2 text-slate-400">{detail.process}</p>
+            </section>
+          )}
+
+          <section>
+            <h2 className="text-lg font-semibold text-white">Result / Outcome</h2>
+            <p className="mt-2 text-slate-400">{project.outcome}</p>
+          </section>
+
+          {detail?.learnings && (
+            <section>
+              <h2 className="text-lg font-semibold text-white">Key Learnings</h2>
+              <p className="mt-2 text-slate-400">{detail.learnings}</p>
+            </section>
+          )}
+        </div>
+
+        {/* Gallery placeholder: use same image or multiple if we have more */}
+        <section className="mt-12">
+          <h2 className="text-lg font-semibold text-white">Visuals</h2>
+          <div className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3">
+            <div className="relative aspect-video overflow-hidden rounded-lg bg-slate-800">
+              <Image src={project.image} alt="" fill className="object-cover" />
+            </div>
+            {id === 'scooter-topology' && (
+              <>
+                <div className="relative aspect-video overflow-hidden rounded-lg bg-slate-800">
+                  <Image src="/images/scooter-2.png" alt="" fill className="object-cover" />
+                </div>
+                <div className="relative aspect-video overflow-hidden rounded-lg bg-slate-800">
+                  <Image src="/images/scooter-3.png" alt="" fill className="object-cover" />
+                </div>
+                <div className="relative aspect-video overflow-hidden rounded-lg bg-slate-800">
+                  <Image src="/images/scooter-4.png" alt="" fill className="object-cover" />
+                </div>
+              </>
+            )}
+          </div>
+        </section>
+      </div>
+    </PageTransition>
+  );
+}
