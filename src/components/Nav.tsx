@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
@@ -27,9 +28,17 @@ export function Nav() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         <Link
           href="/"
-          className="text-lg font-semibold tracking-tight text-white transition hover:text-accent-cyan"
+          className="flex items-center transition opacity-90 hover:opacity-100"
+          aria-label="Home"
         >
-          VNP
+          <Image
+            src="/images/home-logo.png"
+            alt="Home"
+            width={120}
+            height={40}
+            className="h-8 w-auto sm:h-9"
+            priority
+          />
         </Link>
 
         <div className="hidden md:flex md:items-center md:gap-1">
