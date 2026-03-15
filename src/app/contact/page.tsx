@@ -45,7 +45,7 @@ export default function ContactPage() {
             <span>(562) 583-6346</span>
           </a>
           <a
-            href="https://www.linkedin.com/in/varun-narendra-patil"
+            href="https://www.linkedin.com/in/varun-patil-b4530a327"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-4 text-slate-300 transition hover:text-accent-cyan"
