@@ -7,7 +7,10 @@ export interface Project {
   shortSummary: string;
   tools: string[];
   outcome: string;
+  /** Hero / card image */
   image: string;
+  /** Optional gallery for project detail “Visuals” section (all images shown in order) */
+  gallery?: string[];
   period: string;
 }
 
@@ -30,6 +33,12 @@ export const projects: Project[] = [
     tools: ['Altair Inspire', 'SolidWorks', 'FEA'],
     outcome: '~40% total mass reduction; fork leg alone 69% weight reduction (3.6 kg → 1.1 kg). Aluminum 6061-T6.',
     image: '/images/scooter-1.png',
+    gallery: [
+      '/images/scooter-1.png',
+      '/images/scooter-2.png',
+      '/images/scooter-3.png',
+      '/images/scooter-4.png',
+    ],
     period: 'Aug 2025 – Dec 2025',
   },
   {
@@ -49,7 +58,13 @@ export const projects: Project[] = [
     shortSummary: 'Designed and prototyped high-pressure, high-temperature test sections; supported experiments with high-speed and IR imaging for thermal and flow visualization.',
     tools: ['High-speed imaging', 'IR thermography', 'Test section design', 'Prototyping'],
     outcome: 'Experimental support for multiphase flow and boiling research; visualization and data for validation.',
-    image: '/images/scooter-2.png',
+    image: '/images/pool-flow-boiling-1.png',
+    gallery: [
+      '/images/pool-flow-boiling-1.png',
+      '/images/pool-flow-boiling-2.png',
+      '/images/pool-flow-boiling-3.png',
+      '/images/pool-flow-boiling-4.png',
+    ],
     period: 'May 2025 – Aug 2025',
   },
   {

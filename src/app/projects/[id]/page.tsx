@@ -17,6 +17,10 @@ export default function ProjectDetailPage() {
 
   if (!project) notFound();
 
+  const visualImages = project.gallery?.length
+    ? project.gallery
+    : [project.image];
+
   return (
     <PageTransition>
       <div className="mx-auto max-w-4xl px-4 py-24 sm:px-6 lg:px-8">
@@ -113,26 +117,26 @@ export default function ProjectDetailPage() {
           )}
         </div>
 
-        {/* Gallery placeholder: use same image or multiple if we have more */}
         <section className="mt-12">
           <h2 className="text-lg font-semibold text-white">Visuals</h2>
-          <div className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3">
-            <div className="relative aspect-video overflow-hidden rounded-lg bg-slate-800">
-              <Image src={project.image} alt="" fill className="object-cover" />
-            </div>
-            {id === 'scooter-topology' && (
-              <>
-                <div className="relative aspect-video overflow-hidden rounded-lg bg-slate-800">
-                  <Image src="/images/scooter-2.png" alt="" fill className="object-cover" />
-                </div>
-                <div className="relative aspect-video overflow-hidden rounded-lg bg-slate-800">
-                  <Image src="/images/scooter-3.png" alt="" fill className="object-cover" />
-                </div>
-                <div className="relative aspect-video overflow-hidden rounded-lg bg-slate-800">
-                  <Image src="/images/scooter-4.png" alt="" fill className="object-cover" />
-                </div>
-              </>
-            )}
+          <p className="mt-1 text-sm text-slate-500">
+            Lab setup and experimental hardware from this project.
+          </p>
+          <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
+            {visualImages.map((src, idx) => (
+              <div
+                key={`${src}-${idx}`}
+                className="relative aspect-[4/3] overflow-hidden rounded-lg bg-slate-800"
+              >
+                <Image
+                  src={src}
+                  alt={`${project.title} — experimental setup photo ${idx + 1}`}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 100vw, 50vw"
+                />
+              </div>
+            ))}
           </div>
         </section>
       </div>
