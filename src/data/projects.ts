@@ -19,7 +19,7 @@ export const projects: Project[] = [
     shortSummary: 'Thesis project: buoyancy-driven two-phase loop integrated with nano-enhanced PCM for passive thermal regulation of EV battery modules. Pump-free heat removal using self-driven coolant.',
     tools: ['ANSYS Fluent', 'SolidWorks', 'CFD/VOF', 'PCM characterization', 'Lab instrumentation'],
     outcome: 'In progress. Target: pack temps below ~45°C under 3–5C discharge, ΔT < 5°C, no external pumping.',
-    image: '/images/scooter-1.png',
+    image: '/images/ev-btms-thermosyphon.png',
     period: 'Aug 2025 – Present',
   },
   {
