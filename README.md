@@ -1,4 +1,4 @@
-# Varun Narendra Patil — Mechanical Engineering Portfolio
+# Varun Narendra Patil - Mechanical Engineering Portfolio
 
 A multi-page, premium portfolio site for an M.S. Mechanical Engineering (Design & Manufacturing) student. Built with **Next.js 14**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**.
 
@@ -27,7 +27,7 @@ npm start
 
 ```
 ├── public/
-│   ├── images/          # Hero and project images (hero.jpg, scooter-1–4.png)
+│   ├── images/          # Hero and project images (hero.jpg, scooter-1-4.png)
 │   └── resume/          # Place resume PDF here (VarunNarendraPatil_Resume.pdf)
 ├── src/
 │   ├── app/

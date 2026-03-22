@@ -130,7 +130,7 @@ export default function ProjectDetailPage() {
               >
                 <PortfolioImage
                   src={src}
-                  alt={`${project.title} — figure ${idx + 1}`}
+                  alt={`${project.title}, figure ${idx + 1}`}
                   fill
                   className="object-cover"
                   sizes="(max-width: 640px) 100vw, 50vw"

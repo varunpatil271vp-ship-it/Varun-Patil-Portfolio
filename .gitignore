@@ -24,9 +24,10 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 
-# IDE
+# IDE / local session
 .idea
 .vscode
+terminals/
 *.swp
 *.swo
 

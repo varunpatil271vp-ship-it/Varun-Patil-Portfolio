@@ -9,7 +9,7 @@ const roles = [
     title: 'Graduate Research Assistant',
     org: 'California State University, Long Beach',
     location: 'Long Beach, CA',
-    period: 'Jul 2025 – Present',
+    period: 'Jul 2025 - Present',
     bullets: [
       'Conducting research on passive EV Battery Thermal Management Systems (BTMS) using PCM-coupled two-phase thermosyphon loops for pump-free heat removal and stable operating temperatures.',
       'Leading a team of 5 undergraduates from design concepts to prototyping: fabricating and instrumenting benchtop systems with thermocouples, pressure sensors, IR thermography, and temperature controllers.',
@@ -23,7 +23,7 @@ const roles = [
     title: 'Volunteer Research Assistant',
     org: 'California State University, Long Beach',
     location: 'Long Beach, CA',
-    period: 'Mar 2025 – Jul 2025',
+    period: 'Mar 2025 - Jul 2025',
     bullets: [
       'Assembled and troubleshot three lab instruments with vendor technicians; adapted to changing lab constraints while ensuring equipment reliability, safety, and readiness for experiments.',
       'Supported undergraduate researchers with report generation and symposium preparation through data organization, figure generation, and iterative feedback.',
@@ -31,13 +31,13 @@ const roles = [
     tags: ['Lab Setup', 'Collaboration'],
   },
   {
-    title: 'Trainee Boiler Attendant – Manufacturing Operations',
+    title: 'Trainee Boiler Attendant, Manufacturing Operations',
     org: 'Aryan Paper Mill Pvt. Ltd.',
     location: 'Gujarat, India',
-    period: 'Sep 2023 – Feb 2024',
+    period: 'Sep 2023 - Feb 2024',
     bullets: [
       'Learned recycling and production operations in a 100+ ton/day packaging facility; followed preventive maintenance and safety SOPs for operational reliability and consistent output quality.',
-      'Worked in a team to evaluate 10+ ply configurations; supported project development improving compression strength 7× (95–180 lbs) and contributed to corrugated hospital bed development for large-scale shelters during the pandemic.',
+      'Worked in a team to evaluate 10+ ply configurations; supported project development improving compression strength 7× (95-180 lbs) and contributed to corrugated hospital bed development for large-scale shelters during the pandemic.',
     ],
     tags: ['Manufacturing', 'Quality', 'Lean'],
   },
