@@ -30,6 +30,10 @@ Use this file to stay aligned across chats and sessions. Append a new entry when
 
 - See `.cursor/rules/git-workflow.mdc` for git commit/push and log-update expectations.
 
+### Home hero background (`HeroVisual`)
+
+- The cyan-bordered rounded rectangle that overlapped the right-hand **Explore** links was a decorative “topology” `motion.div` (`right-[10%]`, `border-accent-cyan/20`). It was **removed** so Resume/Contact no longer sit on top of that box.
+
 ---
 
 ## Earlier (summary)

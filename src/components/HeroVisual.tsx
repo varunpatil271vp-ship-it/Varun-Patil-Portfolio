@@ -23,15 +23,6 @@ export function HeroVisual() {
           />
         ))}
       </div>
-      {/* Topology-inspired shape */}
-      <motion.div
-        className="absolute right-[10%] top-1/2 h-48 w-48 -translate-y-1/2 rounded-lg border border-accent-cyan/20 bg-slate-900/50"
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1, delay: 0.3 }}
-      >
-        <div className="absolute inset-2 rounded border border-accent-cyan/10 bg-gradient-to-br from-accent-cyan/5 to-transparent" />
-      </motion.div>
     </div>
   );
 }
