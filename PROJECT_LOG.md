@@ -34,6 +34,10 @@ Use this file to stay aligned across chats and sessions. Append a new entry when
 
 - The cyan-bordered rounded rectangle that overlapped the right-hand **Explore** links was a decorative “topology” `motion.div` (`right-[10%]`, `border-accent-cyan/20`). It was **removed** so Resume/Contact no longer sit on top of that box.
 
+### Favicon
+
+- **`src/app/icon.svg`:** Minimal “VP” monogram on slate-950 (`#0a0e17`) with cyan text (`#22d3ee`), rounded square. Next.js App Router serves it as the site icon automatically.
+
 ---
 
 ## Earlier (summary)
