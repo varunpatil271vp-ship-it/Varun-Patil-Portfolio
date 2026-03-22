@@ -48,7 +48,16 @@ export const projects: Project[] = [
     shortSummary: 'Two-part ML framework: (I) literature-scale HTC prediction with physics-informed features; (II) chained annular-flow surrogate (image → wave → shear → HTC). Co-authored manuscript.',
     tools: ['MATLAB', 'ML (RF, GBM, SVM, DLNN)', 'CoolProp', 'Data mining'],
     outcome: 'MAPE ~5%, R²~0.99 vs Kim–Mudawar benchmark; annular-flow surrogate MAPE 3–6%, R² up to 0.98.',
-    image: '/images/scooter-2.png',
+    image: '/images/ml-flow-boiling-07.png',
+    gallery: [
+      '/images/ml-flow-boiling-01.png',
+      '/images/ml-flow-boiling-02.png',
+      '/images/ml-flow-boiling-03.png',
+      '/images/ml-flow-boiling-04.png',
+      '/images/ml-flow-boiling-05.png',
+      '/images/ml-flow-boiling-06.png',
+      '/images/ml-flow-boiling-07.png',
+    ],
     period: 'Ongoing research',
   },
   {

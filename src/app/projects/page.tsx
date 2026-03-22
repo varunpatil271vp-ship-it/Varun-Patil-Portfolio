@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
+import { PortfolioImage } from '@/components/PortfolioImage';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { PageTransition } from '@/components/PageTransition';
@@ -64,19 +64,19 @@ export default function ProjectsPage() {
                 className="group block overflow-hidden rounded-xl border border-white/10 bg-slate-900/50 card-hover"
               >
                 <div className="relative h-48 w-full bg-slate-800">
-                  <Image
+                  <PortfolioImage
                     src={project.image}
                     alt={project.title}
                     fill
-                    className="object-cover transition group-hover:scale-105"
+                    className="object-cover"
                     sizes="(max-width: 640px) 100vw, 50vw"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
                       target.style.display = 'none';
                     }}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 to-transparent" />
-                  <span className="absolute bottom-3 left-4 text-xs font-medium text-accent-cyan">
+                  <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-t from-slate-950/90 to-transparent" />
+                  <span className="pointer-events-none absolute bottom-3 left-4 z-10 text-xs font-medium text-accent-cyan">
                     {project.category}
                   </span>
                 </div>

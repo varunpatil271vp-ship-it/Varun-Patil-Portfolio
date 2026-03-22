@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+import { PortfolioImage } from '@/components/PortfolioImage';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { PageTransition } from '@/components/PageTransition';
@@ -119,7 +119,7 @@ export default function ResearchPage() {
           <div className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-4">
             {[1, 2, 3, 4].map((n) => (
               <div key={n} className="relative aspect-square overflow-hidden rounded-lg bg-slate-800">
-                <Image
+                <PortfolioImage
                   src={`/images/scooter-${n}.png`}
                   alt={`Project visual ${n}`}
                   fill

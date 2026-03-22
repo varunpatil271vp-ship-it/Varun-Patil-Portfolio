@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
+import { PortfolioImage } from '@/components/PortfolioImage';
 import { motion } from 'framer-motion';
 import { ArrowRight, Briefcase, FlaskConical, FileText, Mail, Wrench } from 'lucide-react';
 import { HeroVisual } from '@/components/HeroVisual';
@@ -33,7 +33,7 @@ export default function HomePage() {
           >
             <div className="relative mb-6 h-48 w-48 overflow-hidden rounded-2xl border-2 border-accent-cyan/30 shadow-xl shadow-accent-cyan/10 sm:h-56 sm:w-56">
               {!heroImageError ? (
-                <Image
+                <PortfolioImage
                   src="/images/hero.png"
                   alt="Varun Narendra Patil - Mechanical Engineering"
                   fill

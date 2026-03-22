@@ -2,7 +2,7 @@
 
 import { useParams, notFound } from 'next/navigation';
 import Link from 'next/link';
-import Image from 'next/image';
+import { PortfolioImage } from '@/components/PortfolioImage';
 import { motion } from 'framer-motion';
 import { ArrowLeft } from 'lucide-react';
 import { PageTransition } from '@/components/PageTransition';
@@ -38,7 +38,7 @@ export default function ProjectDetailPage() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.1 }}
         >
-          <Image
+          <PortfolioImage
             src={project.image}
             alt={project.title}
             fill
@@ -46,8 +46,8 @@ export default function ProjectDetailPage() {
             sizes="(max-width: 768px) 100vw, 896px"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent" />
-          <div className="absolute bottom-4 left-4">
+          <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-t from-slate-950/80 to-transparent" />
+          <div className="pointer-events-none absolute bottom-4 left-4 z-10">
             <span className="text-xs font-medium text-accent-cyan">{project.category}</span>
             <h1 className="mt-1 text-2xl font-bold text-white sm:text-3xl">{project.title}</h1>
             <p className="text-sm text-slate-400">{project.period}</p>
@@ -120,7 +120,7 @@ export default function ProjectDetailPage() {
         <section className="mt-12">
           <h2 className="text-lg font-semibold text-white">Visuals</h2>
           <p className="mt-1 text-sm text-slate-500">
-            Lab setup and experimental hardware from this project.
+            Figures, photos, and visuals from this project.
           </p>
           <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
             {visualImages.map((src, idx) => (
@@ -128,9 +128,9 @@ export default function ProjectDetailPage() {
                 key={`${src}-${idx}`}
                 className="relative aspect-[4/3] overflow-hidden rounded-lg bg-slate-800"
               >
-                <Image
+                <PortfolioImage
                   src={src}
-                  alt={`${project.title} — experimental setup photo ${idx + 1}`}
+                  alt={`${project.title} — figure ${idx + 1}`}
                   fill
                   className="object-cover"
                   sizes="(max-width: 640px) 100vw, 50vw"
