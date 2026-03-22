@@ -1,0 +1,14 @@
+---
+description: Git commit, push, and project log after substantive code changes
+alwaysApply: true
+---
+
+# Git and project log
+
+When you complete substantive code or content changes for this repository (features, fixes, data updates, or config that affects behavior):
+
+1. **Commit and push** to `origin` on the current branch (usually `main`) with a clear, conventional one-line message unless the user explicitly asks not to push.
+2. **Update `PROJECT_LOG.md`** with a short dated entry summarizing what changed and why, so future chats can load context quickly.
+3. If a **Vercel** (or CI) failure is mentioned, prefer fixing root cause (build, lint, types) over silencing checks; only use `ignoreDuringBuilds` or similar if the user agrees after seeing the error.
+
+Do not commit secrets, `.env` files, or local-only paths. Respect existing `.gitignore`.
