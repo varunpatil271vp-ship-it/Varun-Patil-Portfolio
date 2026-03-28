@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { PageTransition } from '@/components/PageTransition';
-import { Download, FileText } from 'lucide-react';
+import { Download } from 'lucide-react';
 
 const highlights = [
   'Graduate Research Assistant at CSULB: passive EV BTMS (PCM-coupled two-phase thermosyphon)',
@@ -61,10 +61,6 @@ export default function ResumePage() {
             <Download className="h-5 w-5" />
             Download PDF
           </a>
-          <span className="flex items-center gap-2 text-sm text-slate-500">
-            <FileText className="h-4 w-4" />
-            Place your resume PDF at <code className="rounded bg-white/10 px-1">public/resume/VarunNarendraPatil_Resume.pdf</code> for the download link to work.
-          </span>
         </motion.div>
 
         <motion.div
@@ -74,7 +70,7 @@ export default function ResumePage() {
           transition={{ delay: 0.35 }}
         >
           <p className="text-sm text-slate-500">
-            For the full resume with education, experience, projects, and technical skills, use the download button above once the PDF is in place, or request a copy via the <Link href="/contact" className="text-accent-cyan hover:underline">Contact</Link> page.
+            For the full resume with education, experience, projects, and technical skills, use the download button above, or request a copy via the <Link href="/contact" className="text-accent-cyan hover:underline">Contact</Link> page.
           </p>
         </motion.div>
       </div>
