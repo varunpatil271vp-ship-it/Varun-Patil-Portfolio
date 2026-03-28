@@ -46,6 +46,7 @@ Use this file to stay aligned across chats and sessions. Append a new entry when
 
 - **`public/resume/VarunNarendraPatil_Resume.pdf`:** Added for visitor download; the Resume page button still links to `/resume/VarunNarendraPatil_Resume.pdf`.
 - **Resume page:** Removed the placeholder line about placing the file under `public/resume/`; footer copy no longer says “once the PDF is in place.”
+- **Update (same day):** Replaced the PDF with a newly uploaded resume file; path and download URL unchanged.
 
 ---
 
