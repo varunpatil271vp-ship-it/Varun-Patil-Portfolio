@@ -58,6 +58,10 @@ Use this file to stay aligned across chats and sessions. Append a new entry when
 
 - **`public/images/lab-pcmf-figure.png`:** Phase Change and Multi-Phase Flow Laboratory composite (replaces scooter placeholders on Research → Lab & Project Visuals).
 
+### EV BTMS project visuals
+
+- **`ev-btms-01` … `ev-btms-06`:** Passive EV BTMS project card and detail gallery — prototype loop, bench setups, wall-temperature plot, PureTemp 37X PCM, and TMC-7000 refrigerant (replaces `ev-btms-thermosyphon.png` placeholder).
+
 ---
 
 ## Earlier (summary)
