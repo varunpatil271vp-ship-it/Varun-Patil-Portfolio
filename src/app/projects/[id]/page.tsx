@@ -4,7 +4,7 @@ import { useParams, notFound } from 'next/navigation';
 import Link from 'next/link';
 import { PortfolioImage } from '@/components/PortfolioImage';
 import { motion } from 'framer-motion';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, ExternalLink } from 'lucide-react';
 import { PageTransition } from '@/components/PageTransition';
 import { getProject } from '@/data/projects';
 import { projectDetails } from '@/data/projectDetails';
@@ -107,6 +107,17 @@ export default function ProjectDetailPage() {
           <section>
             <h2 className="text-lg font-semibold text-white">Result / Outcome</h2>
             <p className="mt-2 text-slate-400">{project.outcome}</p>
+            {project.publicationUrl && (
+              <a
+                href={project.publicationUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex items-center gap-2 rounded-lg border border-accent-cyan/40 bg-accent-cyan/10 px-4 py-2 text-sm font-medium text-accent-cyan transition hover:bg-accent-cyan/20"
+              >
+                <ExternalLink className="h-4 w-4" />
+                Read published paper
+              </a>
+            )}
           </section>
 
           {detail?.learnings && (

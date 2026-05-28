@@ -4,7 +4,8 @@ import { PortfolioImage } from '@/components/PortfolioImage';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { PageTransition } from '@/components/PageTransition';
-import { FileText, FlaskConical, Thermometer } from 'lucide-react';
+import { ExternalLink, FileText, FlaskConical, Thermometer } from 'lucide-react';
+import { publications } from '@/data/publications';
 
 export default function ResearchPage() {
   return (
@@ -55,30 +56,63 @@ export default function ResearchPage() {
           </p>
         </motion.section>
 
-        {/* ML flow-boiling publication */}
-        <motion.section
-          className="mt-10 rounded-xl border border-white/10 bg-slate-900/50 p-6"
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
-        >
-          <div className="flex items-center gap-2 text-accent-amber">
-            <FileText className="h-5 w-5" />
-            <span className="text-sm font-semibold uppercase tracking-wider">Publication</span>
-          </div>
-          <h2 className="mt-3 text-xl font-semibold text-white">
-            Prediction of Heat Transfer Coefficient for Saturated Flow-Boiling in Micro/Mini Tubes using Machine Learning and Annular-Flow Surrogates
-          </h2>
-          <p className="mt-1 text-sm text-slate-500">
-            P.O. Ayegba, S.S. Basarkar, R.M.A. Quddus, <strong className="text-slate-400">Varun Narendra Patil</strong>. Department of Mechanical and Aerospace Engineering, CSULB.
-          </p>
-          <p className="mt-3 text-slate-400">
-            Two-part framework: (I) Literature database of 20,727 HTC measurements from 82 studies (22 fluids, multiple diameters and gravity conditions). Physics-informed dimensionless features; four ML models (DLNN, SVM, RF, GBM) compared to Kim-Mudawar correlation. RF and GBM achieved MAPE ~5%, R²~0.99. Grouped feature importance identified reduced pressure, heat-flux forcing, inertia, and two-phase structure as dominant drivers. Stepwise empirical benchmark derived for interpretability. (II) Chained annular-flow surrogate: image-derived features → wave velocity/frequency → interfacial shear → HTC, with boiling-number correction when nucleation intrudes; MAPE as low as 3%, R² up to 0.98.
-          </p>
-          <p className="mt-2 text-xs text-slate-500">
-            Keywords: flow boiling; heat transfer coefficient; machine learning; SVM; gradient boosting; annular flow; mini/micro-channels.
-          </p>
-        </motion.section>
+        {/* Peer-reviewed publications */}
+        {publications.map((pub, index) => (
+          <motion.section
+            key={pub.id}
+            className="mt-10 rounded-xl border border-white/10 bg-slate-900/50 p-6"
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 + index * 0.05 }}
+          >
+            <div className="flex flex-wrap items-center gap-2 text-accent-amber">
+              <FileText className="h-5 w-5" />
+              <span className="text-sm font-semibold uppercase tracking-wider">Published</span>
+              <span className="rounded-full bg-accent-amber/10 px-2 py-0.5 text-xs font-medium text-accent-amber">
+                {pub.year}
+              </span>
+            </div>
+            <h2 className="mt-3 text-xl font-semibold text-white">{pub.title}</h2>
+            <p className="mt-1 text-sm text-slate-500">
+              {pub.authors.replace(', Varun Narendra Patil', '')},{' '}
+              <strong className="text-slate-400">Varun Narendra Patil</strong>. Department of
+              Mechanical and Aerospace Engineering, CSULB.
+            </p>
+            <p className="mt-2 text-sm text-slate-400">
+              <em>{pub.journal}</em>
+              {' · '}
+              <a
+                href={pub.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent-cyan hover:underline"
+              >
+                doi:{pub.doi}
+              </a>
+            </p>
+            <p className="mt-3 text-slate-400">{pub.abstract}</p>
+            <p className="mt-2 text-xs text-slate-500">Keywords: {pub.keywords}.</p>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <a
+                href={pub.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-lg border border-accent-cyan/40 bg-accent-cyan/10 px-4 py-2 text-sm font-medium text-accent-cyan transition hover:bg-accent-cyan/20"
+              >
+                <ExternalLink className="h-4 w-4" />
+                View on ScienceDirect
+              </a>
+              {pub.projectId && (
+                <Link
+                  href={`/projects/${pub.projectId}`}
+                  className="inline-flex items-center gap-2 rounded-lg border border-white/10 px-4 py-2 text-sm text-slate-300 transition hover:border-white/20 hover:text-white"
+                >
+                  Project write-up
+                </Link>
+              )}
+            </div>
+          </motion.section>
+        ))}
 
         {/* Research themes */}
         <motion.section

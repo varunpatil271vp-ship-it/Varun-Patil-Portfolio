@@ -48,6 +48,12 @@ Use this file to stay aligned across chats and sessions. Append a new entry when
 - **Resume page:** Removed the placeholder line about placing the file under `public/resume/`; footer copy no longer says “once the PDF is in place.”
 - **Update (same day):** Replaced the PDF with a newly uploaded resume file; path and download URL unchanged.
 
+### Published paper (ML flow boiling)
+
+- **`src/data/publications.ts`:** Flow-boiling HTC paper listed with DOI [10.1016/j.ijft.2026.101630](https://doi.org/10.1016/j.ijft.2026.101630) (*International Journal of Thermofluids*, 2026).
+- **Research page:** “Published” section with ScienceDirect link and project cross-link.
+- **Projects:** `ml-flow-boiling` updated to “Published 2026” with `publicationUrl`; project detail shows “Read published paper.”
+
 ---
 
 ## Earlier (summary)

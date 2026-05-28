@@ -12,6 +12,8 @@ export interface Project {
   /** Optional gallery for project detail "Visuals" section (all images shown in order) */
   gallery?: string[];
   period: string;
+  /** DOI or journal page when the work is published */
+  publicationUrl?: string;
 }
 
 /** Ongoing first, then completed projects from newest to oldest. */
@@ -30,9 +32,10 @@ export const projects: Project[] = [
     id: 'ml-flow-boiling',
     title: 'ML Prediction of Flow-Boiling Heat Transfer Coefficient (Micro/Mini Tubes)',
     category: 'Experimental Research',
-    shortSummary: 'Two-part ML framework: (I) literature-scale HTC prediction with physics-informed features; (II) chained annular-flow surrogate (image → wave → shear → HTC). Co-authored manuscript.',
+    shortSummary: 'Two-part ML framework: (I) literature-scale HTC prediction with physics-informed features; (II) chained annular-flow surrogate (image → wave → shear → HTC). Published in International Journal of Thermofluids (2026).',
     tools: ['MATLAB', 'ML (RF, GBM, SVM, DLNN)', 'CoolProp', 'Data mining'],
-    outcome: 'MAPE ~5%, R²~0.99 vs Kim-Mudawar benchmark; annular-flow surrogate MAPE 3-6%, R² up to 0.98.',
+    outcome: 'Published (2026). MAPE ~5%, R²~0.99 vs Kim-Mudawar benchmark; annular-flow surrogate MAPE 3-6%, R² up to 0.98.',
+    publicationUrl: 'https://doi.org/10.1016/j.ijft.2026.101630',
     image: '/images/ml-flow-boiling-07.png',
     gallery: [
       '/images/ml-flow-boiling-01.png',
@@ -43,7 +46,7 @@ export const projects: Project[] = [
       '/images/ml-flow-boiling-06.png',
       '/images/ml-flow-boiling-07.png',
     ],
-    period: 'Ongoing research',
+    period: 'Published 2026',
   },
   {
     id: 'scooter-topology',
