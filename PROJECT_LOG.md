@@ -54,6 +54,10 @@ Use this file to stay aligned across chats and sessions. Append a new entry when
 - **Research page:** “Published” section with ScienceDirect link and project cross-link.
 - **Projects:** `ml-flow-boiling` updated to “Published 2026” with `publicationUrl`; project detail shows “Read published paper.”
 
+### Research lab visuals
+
+- **`public/images/lab-pcmf-figure.png`:** Phase Change and Multi-Phase Flow Laboratory composite (replaces scooter placeholders on Research → Lab & Project Visuals).
+
 ---
 
 ## Earlier (summary)

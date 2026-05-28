@@ -149,20 +149,21 @@ export default function ResearchPage() {
           transition={{ delay: 0.3 }}
         >
           <h2 className="text-lg font-semibold text-white">Lab & Project Visuals</h2>
-          <p className="mt-1 text-sm text-slate-400">Prototype and experimental setup imagery from current work.</p>
-          <div className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-4">
-            {[1, 2, 3, 4].map((n) => (
-              <div key={n} className="relative aspect-square overflow-hidden rounded-lg bg-slate-800">
-                <PortfolioImage
-                  src={`/images/scooter-${n}.png`}
-                  alt={`Project visual ${n}`}
-                  fill
-                  className="object-cover"
-                  sizes="160px"
-                />
-              </div>
-            ))}
+          <p className="mt-1 text-sm text-slate-400">
+            Phase Change and Multi-Phase Flow Laboratory, CSULB — experimental rigs, imaging, and prototypes.
+          </p>
+          <div className="relative mt-4 aspect-[3/4] w-full overflow-hidden rounded-xl border border-white/10 bg-slate-900/50 sm:aspect-[4/3]">
+            <PortfolioImage
+              src="/images/lab-pcmf-figure.png"
+              alt="Phase Change and Multi-Phase Flow Laboratory at CSULB — selected photos of test sections, high-speed imaging, and flow-loop prototypes"
+              fill
+              className="object-contain p-1 sm:p-2"
+              sizes="(max-width: 768px) 100vw, 896px"
+            />
           </div>
+          <p className="mt-2 text-center text-xs text-slate-500">
+            Figure 1. Phase Change and Multi-Phase Flow Laboratory (selected photos).
+          </p>
         </motion.section>
 
         <p className="mt-8 text-center text-sm text-slate-500">
