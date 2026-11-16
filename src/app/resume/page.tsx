@@ -6,10 +6,10 @@ import { PageTransition } from '@/components/PageTransition';
 import { Download } from 'lucide-react';
 
 const highlights = [
-  'Graduate Research Assistant at CSULB: passive EV BTMS (PCM-coupled two-phase thermosyphon)',
-  'Led team of 5 undergraduates; reduced prototype build time 30% and cost 10× with SolidWorks, CNC, 3D printing',
-  'Thermal-fluid research: boiling/condensation modeling in ANSYS Fluent, experimental validation',
-  'Topology optimization (Altair Inspire): 40% mass reduction on electric scooter components',
+  'M.S. thesis completed (Dec 2026): EV BTMS with PureTemp® 37 PCM, expanded graphite, and passive two-phase thermosyphon',
+  'Co-author on two peer-reviewed papers (IJFT 2026; International Journal of Heat and Mass Transfer 2027) on flow-boiling HTC',
+  'Graduate Research Assistant, CSULB: design, prototyping, instrumentation, and experimental validation',
+  'Topology optimization (Altair Inspire): ~40% mass reduction on electric scooter components',
   'Skills: SolidWorks, AutoCAD, ANSYS Fluent, LabVIEW, Engineering Documentation, Data Analysis',
 ];
 

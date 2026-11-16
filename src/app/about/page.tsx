@@ -74,7 +74,10 @@ export default function AboutPage() {
         >
           <h2 className="text-lg font-semibold text-white">Education</h2>
           <p className="mt-2 text-slate-400">
-            <strong className="text-white">M.S. Mechanical Engineering</strong> (Design & Manufacturing), California State University, Long Beach · Aug 2024 - Present
+            <strong className="text-white">M.S. Mechanical Engineering</strong> (Design & Manufacturing), California State University, Long Beach · Aug 2024 - Dec 2026
+          </p>
+          <p className="mt-2 text-sm text-slate-500">
+            Thesis: Investigation of EV battery thermal management using PCM, expanded graphite, and a passive two-phase thermosyphon (Chair: Dr. Paul O. Ayegba).
           </p>
           <p className="mt-2 text-slate-400">
             <strong className="text-white">B.E. Mechanical Engineering</strong>, Dr. A.P.J. Abdul Kalam University, Indore, India · June 2019 - June 2023

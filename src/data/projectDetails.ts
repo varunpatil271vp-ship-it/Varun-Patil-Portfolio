@@ -7,10 +7,13 @@ export const projectDetails: Record<string, {
 }> = {
   'ev-btms-pcm': {
     problem: 'EV battery packs require tight thermal control (typically 20-40°C). Conventional BTMSs use pumps or fans, adding parasitic load and complexity.',
-    objective: 'Develop and validate a passive, buoyancy-driven two-phase loop with nano-enhanced PCM for pump-free heat removal and stable operating temperatures.',
-    role: 'Graduate Research Assistant leading design, prototyping, instrumentation, testing, and documentation; leading a team of 5 undergraduates.',
-    process: 'Literature review and refrigerant/PCM selection; loop geometry and fin design with CFD/VOF screening (ANSYS Fluent); PCM enhancement synthesis and property testing; prototype fabrication (loop + PCM + heater); experimental validation and data acquisition; model calibration.',
-    learnings: 'Integration of PCM with two-phase thermosyphon for scalable, power-free thermal management; hands-on benchtop fabrication, instrumentation (thermocouples, pressure sensors, IR thermography), and QA practices.',
+    objective:
+      'Investigate thermal response of a battery-cell surrogate with PureTemp® 37 PCM, expanded graphite, and a passive two-phase thermosyphon, and compare configurations experimentally and with a transient numerical PCM-wrap study.',
+    role: 'M.S. thesis author; design, prototyping, instrumentation, testing, documentation, and numerical study under Dr. Paul O. Ayegba.',
+    process:
+      'Surrogate tested without PCM and in four cooling configurations (PCM; PCM+EG; PCM+thermosyphon; PCM+EG+thermosyphon). Wall and selected pipe temperatures measured; loop pressure recorded in selected tests. Separate transient numerical study of a prismatic cell with and without PCM-based side wraps.',
+    learnings:
+      'PCM alone produced a temporary wall-temperature plateau near 44 °C; 5 wt.% EG configurations were ~2–4 °C cooler than PCM alone at comparison times (heat spreading). Pipe-wall temperatures were higher at measured exits than entrances. Two-phase circulation and condenser heat rejection were not confirmed in these measurements; solid-phase PCM retention was not demonstrated.',
   },
   'scooter-topology': {
     problem: 'Electric scooter components can be over-designed; topology optimization can reduce mass while preserving strength and manufacturability.',
@@ -20,11 +23,14 @@ export const projectDetails: Record<string, {
     learnings: 'Trade-offs between optimization time, software stability, and design cleanup; confinement number and load application in Inspire; exporting and refining topology results for manufacturing.',
   },
   'ml-flow-boiling': {
-    problem: 'Flow-boiling heat transfer coefficients are difficult to predict across broad operating conditions; classical correlations lose accuracy on multi-fluid, multi-geometry databases.',
-    objective: 'Develop a physics-informed ML framework for HTC prediction and an annular-flow surrogate for quasi-real-time estimation from imaging.',
-    role: 'Co-author; data mining/screening and feature accounting for the literature database and model development.',
-    process: 'Part I: Literature database (20,727 HTC points, 82 studies); physics-informed dimensionless features; training of DLNN, SVM, RF, GBM; benchmark vs Kim-Mudawar; grouped feature importance and stepwise empirical benchmark. Part II: Chained surrogate (image → wave velocity/frequency → interfacial shear → HTC) with boiling-number correction.',
-    learnings: 'ML models (RF, GBM) significantly outperform universal correlations when trained on broad data; reduced pressure, heat flux, inertia, and two-phase structure dominate prediction; annular-flow image-based surrogate enables fast HTC estimation.',
+    problem: 'Flow-boiling heat transfer coefficients are difficult to predict across broad operating conditions; classical correlations lose accuracy on multi-fluid, multi-geometry databases, especially near dryout.',
+    objective:
+      'Develop physics-informed ML models and annular-flow surrogates for HTC prediction, and a dryout-aware empirical correlation for smooth circular micro/mini tubes.',
+    role: 'Co-author on both peer-reviewed papers; contributed to literature database work, feature accounting, and model development with Dr. Ayegba’s group.',
+    process:
+      'IJFT (2026): literature-scale ML on 20,891 HTC points from 83 studies, plus chained annular-flow surrogate (waves → shear → HTC). IJHMT (2027): dryout-aware closed-form correlation on 18,833 points from 78 sources with separate micro/mini and pre-dryout/dryout-region branches.',
+    learnings:
+      'Physics-aligned features and flexible ML outperform universal correlations on broad databases; dryout-aware branching improves interpretability and accuracy versus classical operating-variable correlations.',
   },
   'pool-flow-boiling': {
     objective: 'Support design and prototyping of high-pressure, high-temperature test sections and experiments with thermal/flow visualization.',

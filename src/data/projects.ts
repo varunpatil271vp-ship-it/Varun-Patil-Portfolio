@@ -22,9 +22,11 @@ export const projects: Project[] = [
     id: 'ev-btms-pcm',
     title: 'Passive EV Battery Thermal Management System (PCM + Two-Phase Thermosyphon)',
     category: 'Thermal Systems',
-    shortSummary: 'Thesis project: buoyancy-driven two-phase loop integrated with nano-enhanced PCM for passive thermal regulation of EV battery modules. Pump-free heat removal using self-driven coolant.',
+    shortSummary:
+      'Completed M.S. thesis: experimental and numerical study of PureTemp® 37 PCM, expanded graphite, and a passive two-phase thermosyphon for EV battery-cell thermal management.',
     tools: ['ANSYS Fluent', 'SolidWorks', 'CFD/VOF', 'PCM characterization', 'Lab instrumentation'],
-    outcome: 'In progress. Target: pack temps below ~45°C under 3-5C discharge, ΔT < 5°C, no external pumping.',
+    outcome:
+      'Thesis completed (Dec 2026). At ~20.52 W, selected Wall 1 temps at 10,000 s: 44.4 °C (PCM), 43.7 °C (PCM+thermosyphon), 41.0 °C (PCM/EG), 40.5 °C (PCM+EG+thermosyphon). Numerical PCM/EG wraps lowered predicted core temperature vs unwrapped cell.',
     image: '/images/ev-btms-01-prototype.png',
     gallery: [
       '/images/ev-btms-01-prototype.png',
@@ -34,15 +36,17 @@ export const projects: Project[] = [
       '/images/ev-btms-05-puretemp-pcm.png',
       '/images/ev-btms-06-tmc-refrigerant.png',
     ],
-    period: 'Aug 2025 - Present',
+    period: 'Aug 2025 - Dec 2026',
   },
   {
     id: 'ml-flow-boiling',
     title: 'ML Prediction of Flow-Boiling Heat Transfer Coefficient (Micro/Mini Tubes)',
     category: 'Experimental Research',
-    shortSummary: 'Two-part ML framework: (I) literature-scale HTC prediction with physics-informed features; (II) chained annular-flow surrogate (image → wave → shear → HTC). Published in International Journal of Thermofluids (2026).',
+    shortSummary:
+      'Two-part ML framework for saturated flow-boiling HTC (literature-scale models + annular-flow surrogates). Published in International Journal of Thermofluids (2026); related dryout-aware correlation in International Journal of Heat and Mass Transfer (2027).',
     tools: ['MATLAB', 'ML (RF, GBM, SVM, DLNN)', 'CoolProp', 'Data mining'],
-    outcome: 'Published (2026). MAPE ~5%, R²~0.99 vs Kim-Mudawar benchmark; annular-flow surrogate MAPE 3-6%, R² up to 0.98.',
+    outcome:
+      'Two peer-reviewed papers (2026–2027). IJFT ML models: best MAPE ~4.3–6.4% with R² ≥ 0.993. IJHMT dryout-aware correlation: overall MAPE 17.81% on 18,833 points.',
     publicationUrl: 'https://doi.org/10.1016/j.ijft.2026.101630',
     image: '/images/ml-flow-boiling-07.png',
     gallery: [

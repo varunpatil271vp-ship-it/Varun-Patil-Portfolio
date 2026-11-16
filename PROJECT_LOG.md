@@ -62,6 +62,13 @@ Use this file to stay aligned across chats and sessions. Append a new entry when
 
 - **`ev-btms-01` … `ev-btms-06`:** Passive EV BTMS project card and detail gallery — prototype loop, bench setups, wall-temperature plot, PureTemp 37X PCM, and TMC-7000 refrigerant (replaces `ev-btms-thermosyphon.png` placeholder).
 
+### Thesis + second publication (2026-11)
+
+- **Completed M.S. thesis:** `public/thesis/Varun_Narendra_Patil_Thesis.pdf`; Research page marked **Completed** (Dec 2026); EV BTMS project period/outcome updated.
+- **Publications:** IJFT `10.1016/j.ijft.2026.101630` (OA PDF hosted) + new IJHMT dryout-aware correlation `10.1016/j.ijheatmasstransfer.2026.129798` (DOI link only).
+- **Collaborative thesis:** Rayan Quddus moderate-pressure pool boiling thesis listed under Research (contributor; PDF not hosted pending confirmation).
+- **About / Resume:** education end date Dec 2026; highlights updated for thesis + two papers.
+
 ---
 
 ## Earlier (summary)
