@@ -62,6 +62,10 @@ Use this file to stay aligned across chats and sessions. Append a new entry when
 
 - **`ev-btms-01` … `ev-btms-06`:** Passive EV BTMS project card and detail gallery — prototype loop, bench setups, wall-temperature plot, PureTemp 37X PCM, and TMC-7000 refrigerant (replaces `ev-btms-thermosyphon.png` placeholder).
 
+### Resume PDF refresh (2026-11)
+
+- Replaced `public/resume/VarunNarendraPatil_Resume.pdf` with latest Thermal Engineering / Thermal Management resume; download URL unchanged (`/resume/VarunNarendraPatil_Resume.pdf`).
+
 ### Thesis + second publication (2026-11)
 
 - **Completed M.S. thesis:** `public/thesis/Varun_Narendra_Patil_Thesis.pdf`; Research page marked **Completed** (Dec 2026); EV BTMS project period/outcome updated.
