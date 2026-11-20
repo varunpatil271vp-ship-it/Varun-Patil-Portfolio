@@ -39,9 +39,15 @@ export const projectDetails: Record<string, {
     learnings: 'Multiphase flow visualization and experimental best practices for boiling research.',
   },
   'polyurethane-composites': {
-    objective: 'Characterize tensile behavior of polyurethane composites with varying thickness and DI water ratios for wearables applications.',
-    role: 'Printed samples, performed stress-strain testing, and documented findings.',
-    process: 'Sample preparation (20+ variants); tensile testing; data analysis and written documentation.',
-    learnings: 'Impact of formulation and geometry on mechanical properties for wearable composites.',
+    problem:
+      '3D-printed thermoplastic polyurethane (TPU) films for flexible electronics and thermoelectric substrates need consistent tear resistance; formulation and print thickness interact in nonlinear ways, and cured films often differ from the nominal print height because water evaporates during curing.',
+    objective:
+      'Use Design of Experiments to quantify how water:PU ratio and nominal print thickness affect tear time, then build a second-order predictive model that includes measured thickness to identify combinations that maximize tear resistance.',
+    role:
+      'Team 6 (MAE 524 – Design of Experiments, Dr. Mahdi Yoozbashizadeh): Lubdha Choudhari, Erica Christenson, Heer Patel, Varun Patil, Sadhan Rayapureddy, Samra Tekle. Contributed to fabrication, BiSlide tear testing, DOE/RSM analysis in Minitab, and the final report (5/21/2025).',
+    process:
+      'Ink prep: aqueous PU + DI water at 2:3, 1:1, and 5:1; bath sonicated 20 min; extruded on Hyrel 30M through an 18-gauge blunt tip (0.86 mm ID) onto Teflon; one-layer prints at 100/300/500 µm nominal; microwave cure 2 min (power 2); cornstarch to prevent sticking (45 films total). Tear testing on BiSlide/COSMOS at 1000 µm/min with double-sided tape grips and 3 mm edge notches; tear time recorded to rupture. Analysis: full factorial for tear time and measured thickness, then Response Surface second-order regression in Minitab with water:PU (categorical), nominal thickness, and measured thickness; hierarchical quadratic terms retained/optimized.',
+    learnings:
+      'Water:PU ratio drives tear performance more than nominal thickness alone; ratio×thickness interaction matters. Actual (measured) thickness after curing is a strong predictor of tear time. Contours show best performance for 5:1 (then 2:3) with low nominal and high measured thickness; 1:1 was weakest and least responsive, consistent with higher viscosity/limited flow. Factorial insight plus second-order modeling gave a clear optimization path for durable stretchable substrates.',
   },
 };

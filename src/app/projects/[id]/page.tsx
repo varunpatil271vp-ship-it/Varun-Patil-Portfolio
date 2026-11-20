@@ -115,7 +115,9 @@ export default function ProjectDetailPage() {
                 className="mt-4 inline-flex items-center gap-2 rounded-lg border border-accent-cyan/40 bg-accent-cyan/10 px-4 py-2 text-sm font-medium text-accent-cyan transition hover:bg-accent-cyan/20"
               >
                 <ExternalLink className="h-4 w-4" />
-                Read published paper
+                {project.publicationUrl.startsWith('http')
+                  ? 'Read published paper'
+                  : 'Download project report'}
               </a>
             )}
           </section>

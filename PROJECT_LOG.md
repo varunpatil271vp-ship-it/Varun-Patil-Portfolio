@@ -62,6 +62,11 @@ Use this file to stay aligned across chats and sessions. Append a new entry when
 
 - **`ev-btms-01` … `ev-btms-06`:** Passive EV BTMS project card and detail gallery — prototype loop, bench setups, wall-temperature plot, PureTemp 37X PCM, and TMC-7000 refrigerant (replaces `ev-btms-thermosyphon.png` placeholder).
 
+### MAE 524 Team 6 tensile / PU films (2026-11)
+
+- Updated **`polyurethane-composites`** from Team 6 Final Report: title *3D-Printed Stretchable Substrates for Thermoelectric Devices*; DOE/RSM tear-resistance content; team roster; hosted report at `public/reports/MAE524-Team6-Final-Report.pdf`.
+- Project detail CTA uses “Download project report” for local PDF links vs “Read published paper” for http DOIs.
+
 ### Resume PDF refresh (2026-11)
 
 - Replaced `public/resume/VarunNarendraPatil_Resume.pdf` with latest Thermal Engineering / Thermal Management resume; download URL unchanged (`/resume/VarunNarendraPatil_Resume.pdf`).

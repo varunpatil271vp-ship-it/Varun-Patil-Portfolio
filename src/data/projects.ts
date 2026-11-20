@@ -94,14 +94,23 @@ export const projects: Project[] = [
   },
   {
     id: 'polyurethane-composites',
-    title: 'Tensile Strength of Polyurethane Composites for Wearables',
+    title: '3D-Printed Stretchable Substrates for Thermoelectric Devices',
     category: 'Materials / Testing',
-    shortSummary: 'Printed 20+ polyurethane samples (varying thickness and DI water ratios); performed stress-strain testing and summarized findings in written documentation.',
-    tools: ['3D Printing', 'Tensile testing', 'Data analysis', 'Documentation'],
-    outcome: 'Documented stress-strain behavior for different formulations; support for wearables design.',
+    shortSummary:
+      'MAE 524 Design of Experiments (Team 6): optimized tear resistance of 3D-extrusion-printed aqueous polyurethane films by varying water:PU ratio and nominal thickness, with measured thickness as a covariate for flexible/wearable substrate durability.',
+    tools: [
+      'Hyrel 30M extrusion printing',
+      'SolidWorks / G-code',
+      'BiSlide + COSMOS tensile tear testing',
+      'Minitab (factorial DOE + RSM)',
+      'Bath sonication',
+    ],
+    outcome:
+      '45 one-layer films (ratios 2:3, 1:1, 5:1 × nominal 100/300/500 µm). Factorial ANOVA: water:PU ratio and ratio×thickness interaction significant for tear time (model p=0.003). Second-order RSM: measured thickness strongly significant (p=0.004). Best tear resistance at high water:PU (5:1), low nominal thickness, and high actual measured thickness (~160 µm).',
     image: '/images/polyurethane-tensile-1.png',
     gallery: ['/images/polyurethane-tensile-1.png', '/images/polyurethane-tensile-2.png'],
     period: 'Jan 2025 - May 2025',
+    publicationUrl: '/reports/MAE524-Team6-Final-Report.pdf',
   },
 ];
 
