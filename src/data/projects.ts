@@ -107,8 +107,15 @@ export const projects: Project[] = [
     ],
     outcome:
       '45 one-layer films (ratios 2:3, 1:1, 5:1 × nominal 100/300/500 µm). Factorial ANOVA: water:PU ratio and ratio×thickness interaction significant for tear time (model p=0.003). Second-order RSM: measured thickness strongly significant (p=0.004). Best tear resistance at high water:PU (5:1), low nominal thickness, and high actual measured thickness (~160 µm).',
-    image: '/images/polyurethane-tensile-1.png',
-    gallery: ['/images/polyurethane-tensile-1.png', '/images/polyurethane-tensile-2.png'],
+    image: '/images/pu-films-02-extrusion-print.png',
+    gallery: [
+      '/images/pu-films-01-hyrel-30m.png',
+      '/images/pu-films-02-extrusion-print.png',
+      '/images/pu-films-03-bislide-side.png',
+      '/images/pu-films-04-bislide-top.png',
+      '/images/pu-films-05-main-effects.png',
+      '/images/pu-films-06-contour-5to1.png',
+    ],
     period: 'Jan 2025 - May 2025',
     publicationUrl: '/reports/MAE524-Team6-Final-Report.pdf',
   },

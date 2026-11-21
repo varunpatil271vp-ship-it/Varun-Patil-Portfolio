@@ -15,7 +15,7 @@ Use this file to stay aligned across chats and sessions. Append a new entry when
 ### Data / content
 
 - **ML flow-boiling** project uses seven figures under `public/images/ml-flow-boiling-01.png` … `-07.png`; **hero/thumbnail** is `-07.png` (last figure in the user’s ordered set).
-- **Polyurethane composites** uses `polyurethane-tensile-1.png` (title image) and `polyurethane-tensile-2.png`; both in the gallery.
+- **Polyurethane composites** gallery now uses Team 6 report figures (`pu-films-01` … `pu-films-06`); older `polyurethane-tensile-*.png` removed.
 - **Projects list order** in `src/data/projects.ts`: ongoing / newest first (EV BTMS, ML flow-boiling, scooter, pool boiling, polyurethane oldest last).
 - **Copy:** Em/en dashes in site copy were normalized to commas, colons, or ASCII hyphens where appropriate.
 
@@ -66,6 +66,7 @@ Use this file to stay aligned across chats and sessions. Append a new entry when
 
 - Updated **`polyurethane-composites`** from Team 6 Final Report: title *3D-Printed Stretchable Substrates for Thermoelectric Devices*; DOE/RSM tear-resistance content; team roster; hosted report at `public/reports/MAE524-Team6-Final-Report.pdf`.
 - Project detail CTA uses “Download project report” for local PDF links vs “Read published paper” for http DOIs.
+- **Gallery refresh:** figures from report — Hyrel 30M, extrusion print close-up, BiSlide side/top tear test, main-effects plot, 5:1 contour; replaced `polyurethane-tensile-*.png`.
 
 ### Resume PDF refresh (2026-11)
 
