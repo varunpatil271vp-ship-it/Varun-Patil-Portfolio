@@ -8,7 +8,7 @@ export function Footer() {
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           <div className="text-center md:text-left">
             <p className="text-sm font-medium text-white">Varun Narendra Patil</p>
-            <p className="text-xs text-slate-500">M.S. Mechanical Engineering · Design & Manufacturing</p>
+            <p className="text-xs text-slate-500">M.S. Mechanical Engineering · Thermal, Design and Manufacturing</p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-slate-400">
             <a

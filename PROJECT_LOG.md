@@ -65,6 +65,7 @@ Use this file to stay aligned across chats and sessions. Append a new entry when
 ### Hero specialization line (2026-11)
 
 - Home hero under “M.S. Mechanical Engineering”: **Thermal, Design and Manufacturing** (was Design & Manufacturing).
+- Footer and About (bio + education line) matched to the same phrasing.
 
 ### MAE 524 Team 6 tensile / PU films (2026-11)
 

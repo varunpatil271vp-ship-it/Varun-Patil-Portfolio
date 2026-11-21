@@ -45,7 +45,7 @@ export default function AboutPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
         >
-          I am a Master&apos;s student in Mechanical Engineering at California State University, Long Beach, specializing in Design and Manufacturing. My work sits at the intersection of design, simulation, manufacturing, and testing, translating concepts into prototypes and validated experiments.
+          I am a Master&apos;s student in Mechanical Engineering at California State University, Long Beach, specializing in Thermal, Design and Manufacturing. My work sits at the intersection of design, simulation, manufacturing, and testing, translating concepts into prototypes and validated experiments.
         </motion.p>
 
         <motion.div
@@ -74,7 +74,7 @@ export default function AboutPage() {
         >
           <h2 className="text-lg font-semibold text-white">Education</h2>
           <p className="mt-2 text-slate-400">
-            <strong className="text-white">M.S. Mechanical Engineering</strong> (Design & Manufacturing), California State University, Long Beach · Aug 2024 - Dec 2026
+            <strong className="text-white">M.S. Mechanical Engineering</strong> (Thermal, Design and Manufacturing), California State University, Long Beach · Aug 2024 - Dec 2026
           </p>
           <p className="mt-2 text-sm text-slate-500">
             Thesis: Investigation of EV battery thermal management using PCM, expanded graphite, and a passive two-phase thermosyphon (Chair: Dr. Paul O. Ayegba).
