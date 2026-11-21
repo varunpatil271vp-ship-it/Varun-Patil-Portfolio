@@ -53,7 +53,7 @@ export default function HomePage() {
               Varun Narendra Patil
             </h1>
             <p className="mt-2 text-lg text-accent-cyan">M.S. Mechanical Engineering</p>
-            <p className="mt-1 text-sm text-slate-400">Design & Manufacturing</p>
+            <p className="mt-1 text-sm text-slate-400">Thermal, Design and Manufacturing</p>
             <p className="mt-4 max-w-md text-slate-400">
               Phase change · Thermal-fluid management · Optimization · Boiling/Bubble Dynamics · Piping · Designing · Prototyping · Experimental validation
             </p>
