@@ -9,7 +9,7 @@ export const projectDetails: Record<string, {
     problem: 'EV battery packs require tight thermal control (typically 20-40°C). Conventional BTMSs use pumps or fans, adding parasitic load and complexity.',
     objective:
       'Investigate thermal response of a battery-cell surrogate with PureTemp® 37 PCM, expanded graphite, and a passive two-phase thermosyphon, and compare configurations experimentally and with a transient numerical PCM-wrap study.',
-    role: 'M.S. thesis author; design, prototyping, instrumentation, testing, documentation, and numerical study under Dr. Paul O. Ayegba.',
+    role: 'M.S. thesis author under Dr. Paul O. Ayegba; design, prototyping, instrumentation, testing, documentation, and numerical study. Led a team of 5 undergraduates on benchtop thermal prototypes, cutting build time ~30% and cost ~10× with SolidWorks, CNC aluminum, and 3D printing.',
     process:
       'Surrogate tested without PCM and in four cooling configurations (PCM; PCM+EG; PCM+thermosyphon; PCM+EG+thermosyphon). Wall and selected pipe temperatures measured; loop pressure recorded in selected tests. Separate transient numerical study of a prismatic cell with and without PCM-based side wraps.',
     learnings:

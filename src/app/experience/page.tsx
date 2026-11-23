@@ -16,8 +16,10 @@ const roles = [
       'Tested five thermal configurations at about 20.5 W using PCM, 5 wt.% expanded graphite, and thermosyphon combinations.',
       'Joined two independent copper loops into a shared circuit to simplify fluid charging within the compact experimental enclosure.',
       'Benchmarked two ANSYS Fluent cases within 0.90 K of published 720 s results; used MATLAB to analyse PCM liquid fractions.',
+      'Led a team of 5 undergraduates from design concepts through prototyping and instrumentation of benchtop thermal systems.',
+      'Designed, built, and tested flow-loop test-section prototypes using SolidWorks, CNC-machined aluminum, and 3D printing (PLA, PC), reducing build time by 30% and cost by 10× while maintaining measurement accuracy.',
     ],
-    tags: ['BTMS', 'PCM', 'Thermosyphon', 'SolidWorks', 'LabVIEW', 'ANSYS Fluent', 'MATLAB'],
+    tags: ['BTMS', 'PCM', 'Thermosyphon', 'SolidWorks', 'LabVIEW', 'ANSYS Fluent', 'MATLAB', 'CNC', '3D Printing'],
   },
   {
     title: 'Research Mentor',

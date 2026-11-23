@@ -68,6 +68,7 @@ Use this file to stay aligned across chats and sessions. Append a new entry when
 - **Experience:** GRA / volunteer bullets rewritten from resume; added Research Mentor; Aryan role retitled **Thermal Utilities Intern** (Jul 2023 - Jun 2024) with boiler/steam bullets.
 - **Skills:** categories aligned to resume (instrumentation, data analysis, fabrication, thermal systems, ANSYS).
 - **About / Resume highlights / layout meta** updated for thermal focus; EV BTMS project period **Aug 2025 - Oct 2026**.
+- Restored leadership/cost claims: led 5 undergrads; 30% build time / 10× cost (GRA Experience, Resume highlights, EV BTMS project role).
 
 ### Hero specialization line (2026-11)
 

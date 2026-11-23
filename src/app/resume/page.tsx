@@ -7,6 +7,7 @@ import { Download } from 'lucide-react';
 
 const highlights = [
   'Graduate Research Assistant, CSULB: battery-cooling rigs, PCM/EG/thermosyphon testing at ~20.5 W, LabVIEW/DAQ instrumentation',
+  'Led a team of 5 undergraduates; reduced prototype build time 30% and cost 10× with SolidWorks, CNC, and 3D printing',
   'Co-author on two peer-reviewed papers (IJFT 2026; International Journal of Heat and Mass Transfer 2027) on flow-boiling HTC',
   'M.S. thesis: EV battery thermal management using PCM and a passive two-phase thermosyphon (Aug 2025 - Oct 2026)',
   'Research mentor: undergraduate senior-design team (1st prize), GPU cooling thermosyphon, honours thesis on thermal composites',
