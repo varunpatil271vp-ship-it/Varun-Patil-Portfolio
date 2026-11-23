@@ -6,11 +6,11 @@ import { PageTransition } from '@/components/PageTransition';
 import { Download } from 'lucide-react';
 
 const highlights = [
-  'M.S. thesis completed (Dec 2026): EV BTMS with PureTemp® 37 PCM, expanded graphite, and passive two-phase thermosyphon',
+  'Graduate Research Assistant, CSULB: battery-cooling rigs, PCM/EG/thermosyphon testing at ~20.5 W, LabVIEW/DAQ instrumentation',
   'Co-author on two peer-reviewed papers (IJFT 2026; International Journal of Heat and Mass Transfer 2027) on flow-boiling HTC',
-  'Graduate Research Assistant, CSULB: design, prototyping, instrumentation, and experimental validation',
-  'Topology optimization (Altair Inspire): ~40% mass reduction on electric scooter components',
-  'Skills: SolidWorks, AutoCAD, ANSYS Fluent, LabVIEW, Engineering Documentation, Data Analysis',
+  'M.S. thesis: EV battery thermal management using PCM and a passive two-phase thermosyphon (Aug 2025 - Oct 2026)',
+  'Research mentor: undergraduate senior-design team (1st prize), GPU cooling thermosyphon, honours thesis on thermal composites',
+  'Skills: LabVIEW, NI/MCC DAQ, MATLAB, SolidWorks, CNC, ANSYS Fluent, BTMS/PCM/thermosyphons, pool and flow boiling',
 ];
 
 export default function ResumePage() {

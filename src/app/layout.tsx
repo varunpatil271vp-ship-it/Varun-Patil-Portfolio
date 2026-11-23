@@ -9,10 +9,11 @@ const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-gei
 
 export const metadata: Metadata = {
   title: 'Varun Narendra Patil | Mechanical Engineering Portfolio',
-  description: 'M.S. Mechanical Engineering (Design & Manufacturing). Thermal-fluid systems, optimization, prototyping, and experimental engineering.',
+  description:
+    'M.S. Mechanical Engineering (Thermal, Design and Manufacturing). Battery thermal management, PCM/thermosyphons, boiling experiments, prototyping, and experimental validation.',
   openGraph: {
     title: 'Varun Narendra Patil | Mechanical Engineering Portfolio',
-    description: 'Design & Manufacturing · Thermal Systems · Optimization · Prototyping',
+    description: 'Thermal, Design and Manufacturing · BTMS · PCM · Thermosyphons · Experimental Validation',
   },
 };
 

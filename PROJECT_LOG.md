@@ -62,6 +62,13 @@ Use this file to stay aligned across chats and sessions. Append a new entry when
 
 - **`ev-btms-01` … `ev-btms-06`:** Passive EV BTMS project card and detail gallery — prototype loop, bench setups, wall-temperature plot, PureTemp 37X PCM, and TMC-7000 refrigerant (replaces `ev-btms-thermosyphon.png` placeholder).
 
+### Resume sync (2026-11)
+
+- Replaced `public/resume/VarunNarendraPatil_Resume.pdf` with latest upload.
+- **Experience:** GRA / volunteer bullets rewritten from resume; added Research Mentor; Aryan role retitled **Thermal Utilities Intern** (Jul 2023 - Jun 2024) with boiler/steam bullets.
+- **Skills:** categories aligned to resume (instrumentation, data analysis, fabrication, thermal systems, ANSYS).
+- **About / Resume highlights / layout meta** updated for thermal focus; EV BTMS project period **Aug 2025 - Oct 2026**.
+
 ### Hero specialization line (2026-11)
 
 - Home hero under “M.S. Mechanical Engineering”: **Thermal, Design and Manufacturing** (was Design & Manufacturing).

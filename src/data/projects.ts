@@ -36,7 +36,7 @@ export const projects: Project[] = [
       '/images/ev-btms-05-puretemp-pcm.png',
       '/images/ev-btms-06-tmc-refrigerant.png',
     ],
-    period: 'Aug 2025 - Dec 2026',
+    period: 'Aug 2025 - Oct 2026',
   },
   {
     id: 'ml-flow-boiling',

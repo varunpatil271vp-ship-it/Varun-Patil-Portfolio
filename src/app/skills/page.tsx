@@ -5,24 +5,51 @@ import { PageTransition } from '@/components/PageTransition';
 
 const categories = [
   {
-    title: 'CAD / Design',
-    items: ['SolidWorks', 'AutoCAD', 'GD&T', 'Engineering Drawings', 'Prototyping'],
+    title: 'Testing and Instrumentation',
+    items: [
+      'LabVIEW',
+      'NI / MCC DAQ',
+      'Thermocouples',
+      'Pressure Transducers',
+      'Measurement & Logging',
+    ],
   },
   {
-    title: 'Simulation / Analysis',
-    items: ['ANSYS Fluent', 'FEA', 'CFD', 'Multiphysics Modeling', 'VOF / Boiling & Condensation'],
+    title: 'Data Analysis',
+    items: [
+      'MATLAB',
+      'Data Processing & Visualization',
+      'Transient Temperature Analysis',
+      'Thermal-Performance Comparison',
+    ],
   },
   {
-    title: 'Manufacturing',
-    items: ['CNC Machining', '3D Printing (PLA, PC)', 'DFM', 'Lean Manufacturing', 'Quality Control'],
+    title: 'Test Hardware and Fabrication',
+    items: [
+      'SolidWorks',
+      'Test-Rig Design & Assembly',
+      'CNC Machining',
+      'Conventional Milling',
+      '3D Printing',
+    ],
   },
   {
-    title: 'Programming / Data / Controls',
-    items: ['LabVIEW', 'MATLAB', 'Python', 'Data Analysis', 'DAQ Integration'],
+    title: 'Thermal Systems',
+    items: [
+      'Battery Thermal Management (BTMS)',
+      'Phase Change Materials (PCM)',
+      'Thermosyphons',
+      'Transient Heat Transfer',
+      'Pool and Flow Boiling',
+    ],
   },
   {
-    title: 'Experimental / Instrumentation',
-    items: ['Thermocouples', 'Pressure Sensors', 'IR Thermography', 'Temperature Controllers', 'Calibration & Uncertainty'],
+    title: 'Simulation and Analysis',
+    items: [
+      'ANSYS Fluent (Transient Thermal / Phase-Change)',
+      'ANSYS DesignModeler',
+      'ANSYS Meshing',
+    ],
   },
 ];
 
@@ -43,7 +70,7 @@ export default function SkillsPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
         >
-          CAD, simulation, manufacturing, programming, and experimental instrumentation.
+          Instrumentation, thermal systems, fabrication, data analysis, and simulation.
         </motion.p>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2">

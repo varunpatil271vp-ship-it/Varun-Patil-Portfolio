@@ -11,13 +11,25 @@ const roles = [
     location: 'Long Beach, CA',
     period: 'Jul 2025 - Present',
     bullets: [
-      'Conducting research on passive EV Battery Thermal Management Systems (BTMS) using PCM-coupled two-phase thermosyphon loops for pump-free heat removal and stable operating temperatures.',
-      'Leading a team of 5 undergraduates from design concepts to prototyping: fabricating and instrumenting benchtop systems with thermocouples, pressure sensors, IR thermography, and temperature controllers.',
-      'Performing tests under transient and battery-like discharge conditions; executing QA (calibration, repeatability, uncertainty tracking) and generating reports with results, plots, and recommendations.',
-      'Creating and maintaining project documentation (BOMs, test procedures, lab logs); producing CAD-based engineering drawings; modeling boiling/condensation in ANSYS Fluent and validating against experimental data.',
-      'Designed, built, and tested flow-loop test-section prototypes using SolidWorks, CNC-machined aluminum, and 3D printing (PLA, PC), reducing build time by 30% and cost by 10× while maintaining measurement accuracy.',
+      'Designed two battery-cooling rigs in SolidWorks; built acrylic/aluminium enclosures, copper loops, and 3D-printed coil supports.',
+      'Installed eight K-type thermocouples on surrogate walls and copper piping plus a loop-pressure transducer; used LabVIEW with MCC USB-TC and NI DAQ to log temperatures at approximately 3 Hz and monitor absolute loop pressure during testing.',
+      'Tested five thermal configurations at about 20.5 W using PCM, 5 wt.% expanded graphite, and thermosyphon combinations.',
+      'Joined two independent copper loops into a shared circuit to simplify fluid charging within the compact experimental enclosure.',
+      'Benchmarked two ANSYS Fluent cases within 0.90 K of published 720 s results; used MATLAB to analyse PCM liquid fractions.',
     ],
-    tags: ['SolidWorks', 'ANSYS Fluent', 'LabVIEW', 'CNC', '3D Printing', 'Thermal Systems'],
+    tags: ['BTMS', 'PCM', 'Thermosyphon', 'SolidWorks', 'LabVIEW', 'ANSYS Fluent', 'MATLAB'],
+  },
+  {
+    title: 'Research Mentor',
+    org: 'California State University, Long Beach',
+    location: 'Long Beach, CA',
+    period: 'Jul 2025 - Aug 2025',
+    bullets: [
+      'Mentored a five-student undergraduate team that won first prize for its final senior design project.',
+      'Supported three undergraduate students developing a GPU cooling system using a deionized-water thermosyphon.',
+      'Guided an undergraduate honours thesis investigating composite materials to improve thermal conductivity and heat transfer.',
+    ],
+    tags: ['Mentorship', 'Thermal Systems', 'Undergraduate Research'],
   },
   {
     title: 'Volunteer Research Assistant',
@@ -25,21 +37,25 @@ const roles = [
     location: 'Long Beach, CA',
     period: 'Mar 2025 - Jul 2025',
     bullets: [
-      'Assembled and troubleshot three lab instruments with vendor technicians; adapted to changing lab constraints while ensuring equipment reliability, safety, and readiness for experiments.',
-      'Supported undergraduate researchers with report generation and symposium preparation through data organization, figure generation, and iterative feedback.',
+      'Helped assemble piping, a centrifugal pump, pressure accumulator, and flowmeter for pool- and flow-boiling experiments.',
+      'Integrated K-type thermocouples and pressure transducers for temperature and pressure measurements during testing.',
+      'Configured assembly of copper and ITO-coated sapphire heaters with PTFE gaskets and RTV silicone seals for boiling experiments.',
+      'Contributed fabricating SS304 test sections and flanges using CNC milling, drilling, boring, tapping, and stock preparation.',
+      'Troubleshot and repaired 3D printers and a nanoindenter to support prototype fabrication and laboratory materials testing.',
     ],
-    tags: ['Lab Setup', 'Collaboration'],
+    tags: ['Pool/Flow Boiling', 'CNC', 'Instrumentation', 'Lab Setup'],
   },
   {
-    title: 'Trainee Boiler Attendant, Manufacturing Operations',
+    title: 'Thermal Utilities Intern, Manufacturing Operations',
     org: 'Aryan Paper Mill Pvt. Ltd.',
     location: 'Gujarat, India',
-    period: 'Sep 2023 - Feb 2024',
+    period: 'Jul 2023 - Jun 2024',
     bullets: [
-      'Learned recycling and production operations in a 100+ ton/day packaging facility; followed preventive maintenance and safety SOPs for operational reliability and consistent output quality.',
-      'Worked in a team to evaluate 10+ ply configurations; supported project development improving compression strength 7× (95-180 lbs) and contributed to corrugated hospital bed development for large-scale shelters during the pandemic.',
+      'Monitored boiler operations supplying steam to a turbine-generator for electricity generation in recycled-paper manufacturing.',
+      'Assisted root-cause analysis of boiler and steam-system faults affecting steam availability for plant power generation.',
+      'Conducted preventive maintenance of boiler and steam-supply systems to maintain readiness for turbine-generator operation.',
     ],
-    tags: ['Manufacturing', 'Quality', 'Lean'],
+    tags: ['Boiler Operations', 'Steam Systems', 'Preventive Maintenance'],
   },
 ];
 
@@ -60,13 +76,13 @@ export default function ExperiencePage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
         >
-          Graduate research, volunteer research, and manufacturing roles.
+          Graduate research, mentoring, volunteer research, and thermal utilities in manufacturing.
         </motion.p>
 
         <div className="mt-12 space-y-10">
           {roles.map((role, i) => (
             <motion.article
-              key={role.title}
+              key={`${role.title}-${role.period}`}
               className="rounded-xl border border-white/10 bg-slate-900/50 p-6 card-hover"
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
