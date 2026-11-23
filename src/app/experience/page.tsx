@@ -48,7 +48,7 @@ const roles = [
     tags: ['Pool/Flow Boiling', 'CNC', 'Instrumentation', 'Lab Setup'],
   },
   {
-    title: 'Thermal Utilities Intern, Manufacturing Operations',
+    title: 'Thermal Engineer - Boiler Operations',
     org: 'Aryan Paper Mill Pvt. Ltd.',
     location: 'Gujarat, India',
     period: 'Jul 2023 - Jun 2024',
